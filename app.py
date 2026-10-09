@@ -1,14 +1,14 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-from src.ingestion import get_available_cases, load_case
-from src.entity_resolution import process_case
-from src.graph import build_case_graph
-from src.analysis import analyze_case_graph
-from src.anomaly import detect_patterns
-from src.explainability import explain_patterns, get_investigation_timeline
-from src.visualization import create_network_html
-from src.audit import append_audit_event, get_audit_log, verify_audit_chain
+from ingestion import get_available_cases, load_case
+from entity_resolution import process_case
+from graph import build_case_graph
+from analysis import analyze_case_graph
+from anomaly import detect_patterns
+from explainability import explain_patterns, get_investigation_timeline
+from visualization import create_network_html
+from audit import append_audit_event, get_audit_log, verify_audit_chain
 import pandas as pd
 from typing import Dict
 
